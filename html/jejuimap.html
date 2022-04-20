@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0f978eb4c1b84c82ae4efa0e1de91c7a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0f978eb4c1b84c82ae4efa0e1de91c7a" ></div>
+        
+</body>
+<script>    
+    
+            var map_0f978eb4c1b84c82ae4efa0e1de91c7a = L.map(
+                "map_0f978eb4c1b84c82ae4efa0e1de91c7a",
+                {
+                    center: [33.36, 126.53],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_46ac95de752d4cbabe5524437d306cbf = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var circle_marker_5d763fbe0db4451a844a61d493d55744 = L.circleMarker(
+                [33.4449665714381, 126.560876848817],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_ea9f70af8ea54a52924d6f191a419f09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b387a4a8b3804d609468a9ca82e6fef1 = $(`<div id="html_b387a4a8b3804d609468a9ca82e6fef1" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 산천단남길 10 </pre></div>`)[0];
+            popup_ea9f70af8ea54a52924d6f191a419f09.setContent(html_b387a4a8b3804d609468a9ca82e6fef1);
+        
+
+        circle_marker_5d763fbe0db4451a844a61d493d55744.bindPopup(popup_ea9f70af8ea54a52924d6f191a419f09)
+        ;
+
+        
+    
+    
+            circle_marker_5d763fbe0db4451a844a61d493d55744.bindTooltip(
+                `<div>
+                     제주의료원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c02a18bf89f4d268d4f80d943961106 = L.marker(
+                [33.4449665714381, 126.560876848817],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_f86b5ed2eaaa45b9b96cb5624c10c6ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6c02a18bf89f4d268d4f80d943961106.setIcon(icon_f86b5ed2eaaa45b9b96cb5624c10c6ca);
+        
+    
+        var popup_ceb9ba53cab349da8e4a9c6b781fd14c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e197851959724bde96c508da99ea738e = $(`<div id="html_e197851959724bde96c508da99ea738e" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 산천단남길 10 </pre></div>`)[0];
+            popup_ceb9ba53cab349da8e4a9c6b781fd14c.setContent(html_e197851959724bde96c508da99ea738e);
+        
+
+        marker_6c02a18bf89f4d268d4f80d943961106.bindPopup(popup_ceb9ba53cab349da8e4a9c6b781fd14c)
+        ;
+
+        
+    
+    
+            marker_6c02a18bf89f4d268d4f80d943961106.bindTooltip(
+                `<div>
+                     제주의료원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cb0cc756065046d998a82476a4f591c1 = L.circleMarker(
+                [33.2544567337417, 126.565429388722],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_482649ba9c20420f9c73564ccc9351a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b171113537e94ba0aa81a720993c7199 = $(`<div id="html_b171113537e94ba0aa81a720993c7199" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 서귀포시 일주동로 8638 </pre></div>`)[0];
+            popup_482649ba9c20420f9c73564ccc9351a6.setContent(html_b171113537e94ba0aa81a720993c7199);
+        
+
+        circle_marker_cb0cc756065046d998a82476a4f591c1.bindPopup(popup_482649ba9c20420f9c73564ccc9351a6)
+        ;
+
+        
+    
+    
+            circle_marker_cb0cc756065046d998a82476a4f591c1.bindTooltip(
+                `<div>
+                     서귀포열린병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6003bed125bf45bdb550ba3a19e210c9 = L.marker(
+                [33.2544567337417, 126.565429388722],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_5442f2eb2dbc4bde8634071ae9312603 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6003bed125bf45bdb550ba3a19e210c9.setIcon(icon_5442f2eb2dbc4bde8634071ae9312603);
+        
+    
+        var popup_5fd01a0b59b14f33a2302e3a2509b075 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2185f4262fee4b0b9250e12e70cc763a = $(`<div id="html_2185f4262fee4b0b9250e12e70cc763a" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 서귀포시 일주동로 8638 </pre></div>`)[0];
+            popup_5fd01a0b59b14f33a2302e3a2509b075.setContent(html_2185f4262fee4b0b9250e12e70cc763a);
+        
+
+        marker_6003bed125bf45bdb550ba3a19e210c9.bindPopup(popup_5fd01a0b59b14f33a2302e3a2509b075)
+        ;
+
+        
+    
+    
+            marker_6003bed125bf45bdb550ba3a19e210c9.bindTooltip(
+                `<div>
+                     서귀포열린병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_87185f9cae0642e2a8af1dffd8afeb21 = L.circleMarker(
+                [33.5176147513627, 126.522204298356],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_d2e7e89d14bc4db6aecae2e0fdf91b60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc63f41be3f24aaaa02e43d10f170ec3 = $(`<div id="html_fc63f41be3f24aaaa02e43d10f170ec3" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 탑동로 26 </pre></div>`)[0];
+            popup_d2e7e89d14bc4db6aecae2e0fdf91b60.setContent(html_fc63f41be3f24aaaa02e43d10f170ec3);
+        
+
+        circle_marker_87185f9cae0642e2a8af1dffd8afeb21.bindPopup(popup_d2e7e89d14bc4db6aecae2e0fdf91b60)
+        ;
+
+        
+    
+    
+            circle_marker_87185f9cae0642e2a8af1dffd8afeb21.bindTooltip(
+                `<div>
+                     탑동병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c80672d37f6247bc8ea5dcee228ae13e = L.marker(
+                [33.5176147513627, 126.522204298356],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_545d9b7771354115b81c2ed74808a0f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c80672d37f6247bc8ea5dcee228ae13e.setIcon(icon_545d9b7771354115b81c2ed74808a0f9);
+        
+    
+        var popup_278690887d4c497a88a8554c486123e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c572e2aa28cf4ae78bbd5ad21edd7031 = $(`<div id="html_c572e2aa28cf4ae78bbd5ad21edd7031" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 탑동로 26 </pre></div>`)[0];
+            popup_278690887d4c497a88a8554c486123e0.setContent(html_c572e2aa28cf4ae78bbd5ad21edd7031);
+        
+
+        marker_c80672d37f6247bc8ea5dcee228ae13e.bindPopup(popup_278690887d4c497a88a8554c486123e0)
+        ;
+
+        
+    
+    
+            marker_c80672d37f6247bc8ea5dcee228ae13e.bindTooltip(
+                `<div>
+                     탑동병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a93493bbfd104d2185f1bc43b8710d88 = L.circleMarker(
+                [33.488988594791294, 126.53966603008392],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_981e5ea9309a4ad497c5b0ab661054fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2ade0e09a664646a35e0f8f450e4acb = $(`<div id="html_c2ade0e09a664646a35e0f8f450e4acb" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 중앙로 373 </pre></div>`)[0];
+            popup_981e5ea9309a4ad497c5b0ab661054fd.setContent(html_c2ade0e09a664646a35e0f8f450e4acb);
+        
+
+        circle_marker_a93493bbfd104d2185f1bc43b8710d88.bindPopup(popup_981e5ea9309a4ad497c5b0ab661054fd)
+        ;
+
+        
+    
+    
+            circle_marker_a93493bbfd104d2185f1bc43b8710d88.bindTooltip(
+                `<div>
+                     제주우리병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_184fa8e508fc401abe393cf57d287fcf = L.marker(
+                [33.488988594791294, 126.53966603008392],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_08bd51f0c07c4595bd3d02b270de0fd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_184fa8e508fc401abe393cf57d287fcf.setIcon(icon_08bd51f0c07c4595bd3d02b270de0fd3);
+        
+    
+        var popup_7bd70ab8f5e34b46b8cd588c0d0cd553 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40edcfe70a5a4391a6f2d4dcbc003a1a = $(`<div id="html_40edcfe70a5a4391a6f2d4dcbc003a1a" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 중앙로 373 </pre></div>`)[0];
+            popup_7bd70ab8f5e34b46b8cd588c0d0cd553.setContent(html_40edcfe70a5a4391a6f2d4dcbc003a1a);
+        
+
+        marker_184fa8e508fc401abe393cf57d287fcf.bindPopup(popup_7bd70ab8f5e34b46b8cd588c0d0cd553)
+        ;
+
+        
+    
+    
+            marker_184fa8e508fc401abe393cf57d287fcf.bindTooltip(
+                `<div>
+                     제주우리병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3c9e705eb4ef4162b4d006ebe72ee2b8 = L.circleMarker(
+                [33.49960785734367, 126.52025426794069],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_d2d192a195b64ee68d6c429c647d3005 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13e1fc5a8339451aab56114276dde39f = $(`<div id="html_13e1fc5a8339451aab56114276dde39f" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 서광로 222 </pre></div>`)[0];
+            popup_d2d192a195b64ee68d6c429c647d3005.setContent(html_13e1fc5a8339451aab56114276dde39f);
+        
+
+        circle_marker_3c9e705eb4ef4162b4d006ebe72ee2b8.bindPopup(popup_d2d192a195b64ee68d6c429c647d3005)
+        ;
+
+        
+    
+    
+            circle_marker_3c9e705eb4ef4162b4d006ebe72ee2b8.bindTooltip(
+                `<div>
+                     지오요양병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6539485a045d4a82bc88e45b12d314fe = L.marker(
+                [33.49960785734367, 126.52025426794069],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_3e78cc66b90146578fff8974cdc2c4da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6539485a045d4a82bc88e45b12d314fe.setIcon(icon_3e78cc66b90146578fff8974cdc2c4da);
+        
+    
+        var popup_b61c7c584c9a4e6b9c8f47288547d12c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_262a2b5173fa4a8baa466bf8def2f72a = $(`<div id="html_262a2b5173fa4a8baa466bf8def2f72a" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 서광로 222 </pre></div>`)[0];
+            popup_b61c7c584c9a4e6b9c8f47288547d12c.setContent(html_262a2b5173fa4a8baa466bf8def2f72a);
+        
+
+        marker_6539485a045d4a82bc88e45b12d314fe.bindPopup(popup_b61c7c584c9a4e6b9c8f47288547d12c)
+        ;
+
+        
+    
+    
+            marker_6539485a045d4a82bc88e45b12d314fe.bindTooltip(
+                `<div>
+                     지오요양병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_128e4e145dea4eff81065ff0720d49e8 = L.circleMarker(
+                [33.41814351907186, 126.26906637822024],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_fcf28f80ca6f456bb78f2bdc0fdb5c5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f679498b3dd4762b8942135d177c95b = $(`<div id="html_3f679498b3dd4762b8942135d177c95b" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 한림읍 한수풀로 58</pre></div>`)[0];
+            popup_fcf28f80ca6f456bb78f2bdc0fdb5c5b.setContent(html_3f679498b3dd4762b8942135d177c95b);
+        
+
+        circle_marker_128e4e145dea4eff81065ff0720d49e8.bindPopup(popup_fcf28f80ca6f456bb78f2bdc0fdb5c5b)
+        ;
+
+        
+    
+    
+            circle_marker_128e4e145dea4eff81065ff0720d49e8.bindTooltip(
+                `<div>
+                     제주대림요양병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0787f9acdf344bf9aa033781b9c93eb = L.marker(
+                [33.41814351907186, 126.26906637822024],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_6e6ccedcd6094e95bc348dd6487945f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a0787f9acdf344bf9aa033781b9c93eb.setIcon(icon_6e6ccedcd6094e95bc348dd6487945f5);
+        
+    
+        var popup_d867a5d7e762471983563f7692b09972 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57f519dc1e2b4f2eb0dfbf5d3e7707cc = $(`<div id="html_57f519dc1e2b4f2eb0dfbf5d3e7707cc" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 한림읍 한수풀로 58</pre></div>`)[0];
+            popup_d867a5d7e762471983563f7692b09972.setContent(html_57f519dc1e2b4f2eb0dfbf5d3e7707cc);
+        
+
+        marker_a0787f9acdf344bf9aa033781b9c93eb.bindPopup(popup_d867a5d7e762471983563f7692b09972)
+        ;
+
+        
+    
+    
+            marker_a0787f9acdf344bf9aa033781b9c93eb.bindTooltip(
+                `<div>
+                     제주대림요양병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8c8fb49e32574541a1c0bca547fcf365 = L.circleMarker(
+                [33.488988594791294, 126.53966603008392],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_bc824f746ca34251b2518911cc6d84db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e86e1cd5483494b8a810438f0b211b7 = $(`<div id="html_2e86e1cd5483494b8a810438f0b211b7" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 중앙로 373 </pre></div>`)[0];
+            popup_bc824f746ca34251b2518911cc6d84db.setContent(html_2e86e1cd5483494b8a810438f0b211b7);
+        
+
+        circle_marker_8c8fb49e32574541a1c0bca547fcf365.bindPopup(popup_bc824f746ca34251b2518911cc6d84db)
+        ;
+
+        
+    
+    
+            circle_marker_8c8fb49e32574541a1c0bca547fcf365.bindTooltip(
+                `<div>
+                     제주우리병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_774fd979240541e88ebf6997d20e0412 = L.marker(
+                [33.488988594791294, 126.53966603008392],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_f81162c1b28c4b59bca88d1aa5b93891 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_774fd979240541e88ebf6997d20e0412.setIcon(icon_f81162c1b28c4b59bca88d1aa5b93891);
+        
+    
+        var popup_48b43755396c4f75a6408d52482a548c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54e7df20bb7e4b4fa67a31da53bfe6ec = $(`<div id="html_54e7df20bb7e4b4fa67a31da53bfe6ec" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 중앙로 373 </pre></div>`)[0];
+            popup_48b43755396c4f75a6408d52482a548c.setContent(html_54e7df20bb7e4b4fa67a31da53bfe6ec);
+        
+
+        marker_774fd979240541e88ebf6997d20e0412.bindPopup(popup_48b43755396c4f75a6408d52482a548c)
+        ;
+
+        
+    
+    
+            marker_774fd979240541e88ebf6997d20e0412.bindTooltip(
+                `<div>
+                     제주우리병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e38b39c02fa349848b7322d748e1d49c = L.circleMarker(
+                [33.49232765718483, 126.47047958875584],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_a3148116c15d47c3bbe70511c3748fc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3cb770d000b4a06a9497fd0b621c6b0 = $(`<div id="html_c3cb770d000b4a06a9497fd0b621c6b0" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 월랑로 91 </pre></div>`)[0];
+            popup_a3148116c15d47c3bbe70511c3748fc1.setContent(html_c3cb770d000b4a06a9497fd0b621c6b0);
+        
+
+        circle_marker_e38b39c02fa349848b7322d748e1d49c.bindPopup(popup_a3148116c15d47c3bbe70511c3748fc1)
+        ;
+
+        
+    
+    
+            circle_marker_e38b39c02fa349848b7322d748e1d49c.bindTooltip(
+                `<div>
+                     제주중앙병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f02fbfa7d6e0404abab41f6a57a9e3d0 = L.marker(
+                [33.49232765718483, 126.47047958875584],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_27d45b5e013b42bd954dd823d4f9afef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f02fbfa7d6e0404abab41f6a57a9e3d0.setIcon(icon_27d45b5e013b42bd954dd823d4f9afef);
+        
+    
+        var popup_817b93aba42a4f2a9a8aa01c02728347 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_433db540ea074b9690e5ff36fec915b2 = $(`<div id="html_433db540ea074b9690e5ff36fec915b2" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 월랑로 91 </pre></div>`)[0];
+            popup_817b93aba42a4f2a9a8aa01c02728347.setContent(html_433db540ea074b9690e5ff36fec915b2);
+        
+
+        marker_f02fbfa7d6e0404abab41f6a57a9e3d0.bindPopup(popup_817b93aba42a4f2a9a8aa01c02728347)
+        ;
+
+        
+    
+    
+            marker_f02fbfa7d6e0404abab41f6a57a9e3d0.bindTooltip(
+                `<div>
+                     제주중앙병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4f0d9595df57458a9d6c9014498f439a = L.circleMarker(
+                [33.2861974015548, 126.444080619289],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_ff3e4ef6279845539d4a8ceff0d80908 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37da357764a443b88c6e875ba77a2830 = $(`<div id="html_37da357764a443b88c6e875ba77a2830" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 서귀포시 1100로 453-95 </pre></div>`)[0];
+            popup_ff3e4ef6279845539d4a8ceff0d80908.setContent(html_37da357764a443b88c6e875ba77a2830);
+        
+
+        circle_marker_4f0d9595df57458a9d6c9014498f439a.bindPopup(popup_ff3e4ef6279845539d4a8ceff0d80908)
+        ;
+
+        
+    
+    
+            circle_marker_4f0d9595df57458a9d6c9014498f439a.bindTooltip(
+                `<div>
+                     위호텔
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_601678258e3f42e5a4d6321cbeb457c8 = L.marker(
+                [33.2861974015548, 126.444080619289],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_bdb40ff27f9249a38e58399980d12b04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_601678258e3f42e5a4d6321cbeb457c8.setIcon(icon_bdb40ff27f9249a38e58399980d12b04);
+        
+    
+        var popup_311034ee531647bda103821d0a50ba41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22a5bd76cbf84f08a11a1519604aa6a4 = $(`<div id="html_22a5bd76cbf84f08a11a1519604aa6a4" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 서귀포시 1100로 453-95 </pre></div>`)[0];
+            popup_311034ee531647bda103821d0a50ba41.setContent(html_22a5bd76cbf84f08a11a1519604aa6a4);
+        
+
+        marker_601678258e3f42e5a4d6321cbeb457c8.bindPopup(popup_311034ee531647bda103821d0a50ba41)
+        ;
+
+        
+    
+    
+            marker_601678258e3f42e5a4d6321cbeb457c8.bindTooltip(
+                `<div>
+                     위호텔
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_66233be4e19944e29529a7f3a9e271a7 = L.circleMarker(
+                [33.255376614497735, 126.56420359703512],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_eb1a37ce79b24206b319a253e8b583c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3cc2597713a4f7a984d1280757d6966 = $(`<div id="html_e3cc2597713a4f7a984d1280757d6966" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 서귀포시 장수로 47 </pre></div>`)[0];
+            popup_eb1a37ce79b24206b319a253e8b583c0.setContent(html_e3cc2597713a4f7a984d1280757d6966);
+        
+
+        circle_marker_66233be4e19944e29529a7f3a9e271a7.bindPopup(popup_eb1a37ce79b24206b319a253e8b583c0)
+        ;
+
+        
+    
+    
+            circle_marker_66233be4e19944e29529a7f3a9e271a7.bindTooltip(
+                `<div>
+                     서귀포의료원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b07488cbe5544e9953d1aad328958de = L.marker(
+                [33.255376614497735, 126.56420359703512],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_27c34c18ee974515b39ce8b0a30a68ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5b07488cbe5544e9953d1aad328958de.setIcon(icon_27c34c18ee974515b39ce8b0a30a68ec);
+        
+    
+        var popup_3b19abc7df25470ea6b7a2ba31c2973d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_206e513d82d845f1a1cbebfd90bae1e1 = $(`<div id="html_206e513d82d845f1a1cbebfd90bae1e1" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 서귀포시 장수로 47 </pre></div>`)[0];
+            popup_3b19abc7df25470ea6b7a2ba31c2973d.setContent(html_206e513d82d845f1a1cbebfd90bae1e1);
+        
+
+        marker_5b07488cbe5544e9953d1aad328958de.bindPopup(popup_3b19abc7df25470ea6b7a2ba31c2973d)
+        ;
+
+        
+    
+    
+            marker_5b07488cbe5544e9953d1aad328958de.bindTooltip(
+                `<div>
+                     서귀포의료원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4278f3a767ca46f2ba7d1f1912865eee = L.circleMarker(
+                [33.2544567337417, 126.565429388722],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_314fb76db1b74ef7a5f81e04640c4849 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f637f8a131fb488c8684d1b44568c149 = $(`<div id="html_f637f8a131fb488c8684d1b44568c149" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 서귀포시 일주동로 8638 </pre></div>`)[0];
+            popup_314fb76db1b74ef7a5f81e04640c4849.setContent(html_f637f8a131fb488c8684d1b44568c149);
+        
+
+        circle_marker_4278f3a767ca46f2ba7d1f1912865eee.bindPopup(popup_314fb76db1b74ef7a5f81e04640c4849)
+        ;
+
+        
+    
+    
+            circle_marker_4278f3a767ca46f2ba7d1f1912865eee.bindTooltip(
+                `<div>
+                     서귀포열린병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84aca960a8f74bc49db1d0aec20fdce1 = L.marker(
+                [33.2544567337417, 126.565429388722],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_c4e930052d214e8cb5e25ca5a38ec6f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_84aca960a8f74bc49db1d0aec20fdce1.setIcon(icon_c4e930052d214e8cb5e25ca5a38ec6f3);
+        
+    
+        var popup_9118874127c142dd897f6ddf60c05efb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7a597f683d94a46926b8a203369a835 = $(`<div id="html_d7a597f683d94a46926b8a203369a835" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 서귀포시 일주동로 8638 </pre></div>`)[0];
+            popup_9118874127c142dd897f6ddf60c05efb.setContent(html_d7a597f683d94a46926b8a203369a835);
+        
+
+        marker_84aca960a8f74bc49db1d0aec20fdce1.bindPopup(popup_9118874127c142dd897f6ddf60c05efb)
+        ;
+
+        
+    
+    
+            marker_84aca960a8f74bc49db1d0aec20fdce1.bindTooltip(
+                `<div>
+                     서귀포열린병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_af2567248a154600be8529161436d03d = L.circleMarker(
+                [33.5022615628562, 126.533321656024],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_ac54d757b9fc4acfa1b2a5c23f925f59 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7236b4dc709b4d9d8cd9c37c1f433dfd = $(`<div id="html_7236b4dc709b4d9d8cd9c37c1f433dfd" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 동광로 42 </pre></div>`)[0];
+            popup_ac54d757b9fc4acfa1b2a5c23f925f59.setContent(html_7236b4dc709b4d9d8cd9c37c1f433dfd);
+        
+
+        circle_marker_af2567248a154600be8529161436d03d.bindPopup(popup_ac54d757b9fc4acfa1b2a5c23f925f59)
+        ;
+
+        
+    
+    
+            circle_marker_af2567248a154600be8529161436d03d.bindTooltip(
+                `<div>
+                     토마토요양병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57b5b2cc0f7b41eabf45652485088ed4 = L.marker(
+                [33.5022615628562, 126.533321656024],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_bce6e2aea0aa44b1903ffa8f0f308596 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_57b5b2cc0f7b41eabf45652485088ed4.setIcon(icon_bce6e2aea0aa44b1903ffa8f0f308596);
+        
+    
+        var popup_433a8ef11b78437281b6c994b56d0647 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76eaaa3fd7c54b4ea0fba8219ed1bb3c = $(`<div id="html_76eaaa3fd7c54b4ea0fba8219ed1bb3c" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 동광로 42 </pre></div>`)[0];
+            popup_433a8ef11b78437281b6c994b56d0647.setContent(html_76eaaa3fd7c54b4ea0fba8219ed1bb3c);
+        
+
+        marker_57b5b2cc0f7b41eabf45652485088ed4.bindPopup(popup_433a8ef11b78437281b6c994b56d0647)
+        ;
+
+        
+    
+    
+            marker_57b5b2cc0f7b41eabf45652485088ed4.bindTooltip(
+                `<div>
+                     토마토요양병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_df57e35f1fe5439d8a1412b63db9fbc3 = L.circleMarker(
+                [33.5186422424434, 126.640562197211],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_32f4368d720d41f483c8798e129d40a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27413dc8f6834753ab7f27c54d0de0cc = $(`<div id="html_27413dc8f6834753ab7f27c54d0de0cc" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 조천읍 신조로 203</pre></div>`)[0];
+            popup_32f4368d720d41f483c8798e129d40a8.setContent(html_27413dc8f6834753ab7f27c54d0de0cc);
+        
+
+        circle_marker_df57e35f1fe5439d8a1412b63db9fbc3.bindPopup(popup_32f4368d720d41f483c8798e129d40a8)
+        ;
+
+        
+    
+    
+            circle_marker_df57e35f1fe5439d8a1412b63db9fbc3.bindTooltip(
+                `<div>
+                     제주사랑요양병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52a4dc98cf3849e884b8f91fbb47e55a = L.marker(
+                [33.5186422424434, 126.640562197211],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_d4562809a89d4fe1bd08aba87fe3bb5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_52a4dc98cf3849e884b8f91fbb47e55a.setIcon(icon_d4562809a89d4fe1bd08aba87fe3bb5f);
+        
+    
+        var popup_53912033ef274d74bac99fbc48744d6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a67eafeeb99d4b7ab07e0b06c09e4308 = $(`<div id="html_a67eafeeb99d4b7ab07e0b06c09e4308" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 조천읍 신조로 203</pre></div>`)[0];
+            popup_53912033ef274d74bac99fbc48744d6a.setContent(html_a67eafeeb99d4b7ab07e0b06c09e4308);
+        
+
+        marker_52a4dc98cf3849e884b8f91fbb47e55a.bindPopup(popup_53912033ef274d74bac99fbc48744d6a)
+        ;
+
+        
+    
+    
+            marker_52a4dc98cf3849e884b8f91fbb47e55a.bindTooltip(
+                `<div>
+                     제주사랑요양병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_182abd6ad00b4f1b826c169a92ec1db0 = L.circleMarker(
+                [33.4934122820647, 126.494002252048],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_3018a7f9b58f42f4b842345ada7c2ee5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f6acc2951f64ba6907ac1902da753ae = $(`<div id="html_0f6acc2951f64ba6907ac1902da753ae" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 연삼로 16 </pre></div>`)[0];
+            popup_3018a7f9b58f42f4b842345ada7c2ee5.setContent(html_0f6acc2951f64ba6907ac1902da753ae);
+        
+
+        circle_marker_182abd6ad00b4f1b826c169a92ec1db0.bindPopup(popup_3018a7f9b58f42f4b842345ada7c2ee5)
+        ;
+
+        
+    
+    
+            circle_marker_182abd6ad00b4f1b826c169a92ec1db0.bindTooltip(
+                `<div>
+                     제주제일요양병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c07582f848764bc6aa6a0b1d8d1853e4 = L.marker(
+                [33.4934122820647, 126.494002252048],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_fbab6b4da6ec4cb096ff528459968598 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c07582f848764bc6aa6a0b1d8d1853e4.setIcon(icon_fbab6b4da6ec4cb096ff528459968598);
+        
+    
+        var popup_1f5c76c557484db58eee91ac9fe59df0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3b02fbeb19d4177876b93d6b721c97d = $(`<div id="html_f3b02fbeb19d4177876b93d6b721c97d" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 연삼로 16 </pre></div>`)[0];
+            popup_1f5c76c557484db58eee91ac9fe59df0.setContent(html_f3b02fbeb19d4177876b93d6b721c97d);
+        
+
+        marker_c07582f848764bc6aa6a0b1d8d1853e4.bindPopup(popup_1f5c76c557484db58eee91ac9fe59df0)
+        ;
+
+        
+    
+    
+            marker_c07582f848764bc6aa6a0b1d8d1853e4.bindTooltip(
+                `<div>
+                     제주제일요양병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aab56bc5b8114e15b100cafb22b5636d = L.circleMarker(
+                [33.50084823142394, 126.52841763982754],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_ace8b2ab7e7649aab0bc904d2ee71153 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0a2ca8198364c879955d56dbb708979 = $(`<div id="html_b0a2ca8198364c879955d56dbb708979" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 서광로 301</pre></div>`)[0];
+            popup_ace8b2ab7e7649aab0bc904d2ee71153.setContent(html_b0a2ca8198364c879955d56dbb708979);
+        
+
+        circle_marker_aab56bc5b8114e15b100cafb22b5636d.bindPopup(popup_ace8b2ab7e7649aab0bc904d2ee71153)
+        ;
+
+        
+    
+    
+            circle_marker_aab56bc5b8114e15b100cafb22b5636d.bindTooltip(
+                `<div>
+                     그랜드치과병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6fb92fad9dbb405fa96bdee7adf2600e = L.marker(
+                [33.50084823142394, 126.52841763982754],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_115b0dfdb83146cf9886cd1cc51eb5f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6fb92fad9dbb405fa96bdee7adf2600e.setIcon(icon_115b0dfdb83146cf9886cd1cc51eb5f9);
+        
+    
+        var popup_f043437f35f84f23bd97f919b41dc0fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f47c32861bea42069e83395f62b2fae7 = $(`<div id="html_f47c32861bea42069e83395f62b2fae7" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 서광로 301</pre></div>`)[0];
+            popup_f043437f35f84f23bd97f919b41dc0fa.setContent(html_f47c32861bea42069e83395f62b2fae7);
+        
+
+        marker_6fb92fad9dbb405fa96bdee7adf2600e.bindPopup(popup_f043437f35f84f23bd97f919b41dc0fa)
+        ;
+
+        
+    
+    
+            marker_6fb92fad9dbb405fa96bdee7adf2600e.bindTooltip(
+                `<div>
+                     그랜드치과병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_03f0f81a842c4565947f170a4b25c456 = L.circleMarker(
+                [33.4449665714381, 126.560876848817],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_eeb3998b7a504caca5fc5be050f57956 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea2c6c1a95bc425f939fd3f72e9f78f8 = $(`<div id="html_ea2c6c1a95bc425f939fd3f72e9f78f8" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 산천단남길 10 </pre></div>`)[0];
+            popup_eeb3998b7a504caca5fc5be050f57956.setContent(html_ea2c6c1a95bc425f939fd3f72e9f78f8);
+        
+
+        circle_marker_03f0f81a842c4565947f170a4b25c456.bindPopup(popup_eeb3998b7a504caca5fc5be050f57956)
+        ;
+
+        
+    
+    
+            circle_marker_03f0f81a842c4565947f170a4b25c456.bindTooltip(
+                `<div>
+                     제주의료원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ce34dcd6a8e405e8b96c47277a47696 = L.marker(
+                [33.4449665714381, 126.560876848817],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_6e26c80c8d96492dabc59bc51de97b1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5ce34dcd6a8e405e8b96c47277a47696.setIcon(icon_6e26c80c8d96492dabc59bc51de97b1a);
+        
+    
+        var popup_817075646fca4a5fb8bc2d83ba4f0f12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b37fdca43244b37a65eb19fa2e21391 = $(`<div id="html_5b37fdca43244b37a65eb19fa2e21391" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 산천단남길 10 </pre></div>`)[0];
+            popup_817075646fca4a5fb8bc2d83ba4f0f12.setContent(html_5b37fdca43244b37a65eb19fa2e21391);
+        
+
+        marker_5ce34dcd6a8e405e8b96c47277a47696.bindPopup(popup_817075646fca4a5fb8bc2d83ba4f0f12)
+        ;
+
+        
+    
+    
+            marker_5ce34dcd6a8e405e8b96c47277a47696.bindTooltip(
+                `<div>
+                     제주의료원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_af899a16a12941dab46d866f2c1868e7 = L.circleMarker(
+                [33.4565288091709, 126.546874302481],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_10713b1aeada48979c4c2137bdb0d05c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31463adb746a49a1860f62b6d0368420 = $(`<div id="html_31463adb746a49a1860f62b6d0368420" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 한북로 309 </pre></div>`)[0];
+            popup_10713b1aeada48979c4c2137bdb0d05c.setContent(html_31463adb746a49a1860f62b6d0368420);
+        
+
+        circle_marker_af899a16a12941dab46d866f2c1868e7.bindPopup(popup_10713b1aeada48979c4c2137bdb0d05c)
+        ;
+
+        
+    
+    
+            circle_marker_af899a16a12941dab46d866f2c1868e7.bindTooltip(
+                `<div>
+                     아라요양병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_148ddfe8a2574db49538a5c16c9f34d6 = L.marker(
+                [33.4565288091709, 126.546874302481],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_dec0f9d94f444b01b933cf885fe191db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_148ddfe8a2574db49538a5c16c9f34d6.setIcon(icon_dec0f9d94f444b01b933cf885fe191db);
+        
+    
+        var popup_f4a64abc07004347866c1638cc174c61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14a39689d13640e69b2df6b6a57e6cff = $(`<div id="html_14a39689d13640e69b2df6b6a57e6cff" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 한북로 309 </pre></div>`)[0];
+            popup_f4a64abc07004347866c1638cc174c61.setContent(html_14a39689d13640e69b2df6b6a57e6cff);
+        
+
+        marker_148ddfe8a2574db49538a5c16c9f34d6.bindPopup(popup_f4a64abc07004347866c1638cc174c61)
+        ;
+
+        
+    
+    
+            marker_148ddfe8a2574db49538a5c16c9f34d6.bindTooltip(
+                `<div>
+                     아라요양병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c512f58a6b2a4f429609896763701c6b = L.circleMarker(
+                [33.46877346057146, 126.54695904669676],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_4ffcb2a845f8486aa62774b7a118871b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42849b709c2949468874ea90165f3543 = $(`<div id="html_42849b709c2949468874ea90165f3543" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 중앙로 616</pre></div>`)[0];
+            popup_4ffcb2a845f8486aa62774b7a118871b.setContent(html_42849b709c2949468874ea90165f3543);
+        
+
+        circle_marker_c512f58a6b2a4f429609896763701c6b.bindPopup(popup_4ffcb2a845f8486aa62774b7a118871b)
+        ;
+
+        
+    
+    
+            circle_marker_c512f58a6b2a4f429609896763701c6b.bindTooltip(
+                `<div>
+                     올리브영 제주대학병원점
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68c33f230800477a896be1277e1b827b = L.marker(
+                [33.46877346057146, 126.54695904669676],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_47c101e87b89400da6f9a80551839f69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_68c33f230800477a896be1277e1b827b.setIcon(icon_47c101e87b89400da6f9a80551839f69);
+        
+    
+        var popup_7b2a85fb4d5540678e1a21ab80fa8aa5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7436ced3bd2c4c3d8e849a3a31e500e6 = $(`<div id="html_7436ced3bd2c4c3d8e849a3a31e500e6" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 중앙로 616</pre></div>`)[0];
+            popup_7b2a85fb4d5540678e1a21ab80fa8aa5.setContent(html_7436ced3bd2c4c3d8e849a3a31e500e6);
+        
+
+        marker_68c33f230800477a896be1277e1b827b.bindPopup(popup_7b2a85fb4d5540678e1a21ab80fa8aa5)
+        ;
+
+        
+    
+    
+            marker_68c33f230800477a896be1277e1b827b.bindTooltip(
+                `<div>
+                     올리브영 제주대학병원점
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2c8ca423639445be9ab3b628e3d551d0 = L.circleMarker(
+                [33.49628689190791, 126.5462368495577],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_6918d99c7f6d423dbe5c0b0a9724fa8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6256a6cccc6d4277931b4962f810e8b9 = $(`<div id="html_6256a6cccc6d4277931b4962f810e8b9" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 연신로 52 </pre></div>`)[0];
+            popup_6918d99c7f6d423dbe5c0b0a9724fa8c.setContent(html_6256a6cccc6d4277931b4962f810e8b9);
+        
+
+        circle_marker_2c8ca423639445be9ab3b628e3d551d0.bindPopup(popup_6918d99c7f6d423dbe5c0b0a9724fa8c)
+        ;
+
+        
+    
+    
+            circle_marker_2c8ca423639445be9ab3b628e3d551d0.bindTooltip(
+                `<div>
+                     한마음병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0f8aa1a4bc54b77a7fa08183081a222 = L.marker(
+                [33.49628689190791, 126.5462368495577],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_7b41595919ed4075a88c2d4147f71339 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d0f8aa1a4bc54b77a7fa08183081a222.setIcon(icon_7b41595919ed4075a88c2d4147f71339);
+        
+    
+        var popup_b608e82a23db4faa82dab6ddc12ee666 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccaf3c76c2c54c6b88fa925c0672b339 = $(`<div id="html_ccaf3c76c2c54c6b88fa925c0672b339" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 연신로 52 </pre></div>`)[0];
+            popup_b608e82a23db4faa82dab6ddc12ee666.setContent(html_ccaf3c76c2c54c6b88fa925c0672b339);
+        
+
+        marker_d0f8aa1a4bc54b77a7fa08183081a222.bindPopup(popup_b608e82a23db4faa82dab6ddc12ee666)
+        ;
+
+        
+    
+    
+            marker_d0f8aa1a4bc54b77a7fa08183081a222.bindTooltip(
+                `<div>
+                     한마음병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c0d242124d0543f08e1bc47a54378e25 = L.circleMarker(
+                [33.4449665714381, 126.560876848817],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_fd44f83d19f04fe59e1fec17454e0206 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b61bc626a9c4d4f9dcab007c55bed97 = $(`<div id="html_5b61bc626a9c4d4f9dcab007c55bed97" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 산천단남길 10</pre></div>`)[0];
+            popup_fd44f83d19f04fe59e1fec17454e0206.setContent(html_5b61bc626a9c4d4f9dcab007c55bed97);
+        
+
+        circle_marker_c0d242124d0543f08e1bc47a54378e25.bindPopup(popup_fd44f83d19f04fe59e1fec17454e0206)
+        ;
+
+        
+    
+    
+            circle_marker_c0d242124d0543f08e1bc47a54378e25.bindTooltip(
+                `<div>
+                     제주의료원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07624cdb4d4644cfabdd3dc324783a6f = L.marker(
+                [33.4449665714381, 126.560876848817],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_8fa23720d80341f18c789c64d568c8f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_07624cdb4d4644cfabdd3dc324783a6f.setIcon(icon_8fa23720d80341f18c789c64d568c8f6);
+        
+    
+        var popup_7b3cd5f0e0124db787ccd08114c9b3c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5aee047899ab4439a7e2c745ee173aab = $(`<div id="html_5aee047899ab4439a7e2c745ee173aab" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 산천단남길 10</pre></div>`)[0];
+            popup_7b3cd5f0e0124db787ccd08114c9b3c4.setContent(html_5aee047899ab4439a7e2c745ee173aab);
+        
+
+        marker_07624cdb4d4644cfabdd3dc324783a6f.bindPopup(popup_7b3cd5f0e0124db787ccd08114c9b3c4)
+        ;
+
+        
+    
+    
+            marker_07624cdb4d4644cfabdd3dc324783a6f.bindTooltip(
+                `<div>
+                     제주의료원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5396278720bb4685987327a909623a52 = L.circleMarker(
+                [33.46121705027628, 126.5332448139837],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_fd165484007347738527204dcc55d186 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b502069e29314b188cc9ba306b0a9bc3 = $(`<div id="html_b502069e29314b188cc9ba306b0a9bc3" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 죽성서길 6 </pre></div>`)[0];
+            popup_fd165484007347738527204dcc55d186.setContent(html_b502069e29314b188cc9ba306b0a9bc3);
+        
+
+        circle_marker_5396278720bb4685987327a909623a52.bindPopup(popup_fd165484007347738527204dcc55d186)
+        ;
+
+        
+    
+    
+            circle_marker_5396278720bb4685987327a909623a52.bindTooltip(
+                `<div>
+                     연강병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c648eff6962e4e96a22f2a3d099d1ee1 = L.marker(
+                [33.46121705027628, 126.5332448139837],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_aa8969cdded44398821722d4f6bcbff6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c648eff6962e4e96a22f2a3d099d1ee1.setIcon(icon_aa8969cdded44398821722d4f6bcbff6);
+        
+    
+        var popup_ccb00ffbb02b4b978af4f0ebb07b1295 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_adb4485df709494d9c69fda217464389 = $(`<div id="html_adb4485df709494d9c69fda217464389" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 죽성서길 6 </pre></div>`)[0];
+            popup_ccb00ffbb02b4b978af4f0ebb07b1295.setContent(html_adb4485df709494d9c69fda217464389);
+        
+
+        marker_c648eff6962e4e96a22f2a3d099d1ee1.bindPopup(popup_ccb00ffbb02b4b978af4f0ebb07b1295)
+        ;
+
+        
+    
+    
+            marker_c648eff6962e4e96a22f2a3d099d1ee1.bindTooltip(
+                `<div>
+                     연강병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1c03a25b1a244661bef3841540b436fa = L.circleMarker(
+                [33.5176147513627, 126.522204298356],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_562530bb388a42cf9342c83c4e11839f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20c70c8aac544e8caeeb8f80300c3145 = $(`<div id="html_20c70c8aac544e8caeeb8f80300c3145" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 탑동로 26 </pre></div>`)[0];
+            popup_562530bb388a42cf9342c83c4e11839f.setContent(html_20c70c8aac544e8caeeb8f80300c3145);
+        
+
+        circle_marker_1c03a25b1a244661bef3841540b436fa.bindPopup(popup_562530bb388a42cf9342c83c4e11839f)
+        ;
+
+        
+    
+    
+            circle_marker_1c03a25b1a244661bef3841540b436fa.bindTooltip(
+                `<div>
+                     탑동병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83531534657b43deba973836ce506066 = L.marker(
+                [33.5176147513627, 126.522204298356],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_29ccb8a15d6b4105a6237b307db5c156 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_83531534657b43deba973836ce506066.setIcon(icon_29ccb8a15d6b4105a6237b307db5c156);
+        
+    
+        var popup_52152d6dd56d47f5b73971b48bfa21c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82b9f6de43ff420580aa2a07bae2819e = $(`<div id="html_82b9f6de43ff420580aa2a07bae2819e" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 탑동로 26 </pre></div>`)[0];
+            popup_52152d6dd56d47f5b73971b48bfa21c3.setContent(html_82b9f6de43ff420580aa2a07bae2819e);
+        
+
+        marker_83531534657b43deba973836ce506066.bindPopup(popup_52152d6dd56d47f5b73971b48bfa21c3)
+        ;
+
+        
+    
+    
+            marker_83531534657b43deba973836ce506066.bindTooltip(
+                `<div>
+                     탑동병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_251abf679b1c49299cc8f4e366843934 = L.circleMarker(
+                [33.5130786616948, 126.522388527373],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_0ee4713839534ca79e59956ca91d83b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e39ca0626ccb4732b7443170d10c415d = $(`<div id="html_e39ca0626ccb4732b7443170d10c415d" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 관덕로 30 </pre></div>`)[0];
+            popup_0ee4713839534ca79e59956ca91d83b1.setContent(html_e39ca0626ccb4732b7443170d10c415d);
+        
+
+        circle_marker_251abf679b1c49299cc8f4e366843934.bindPopup(popup_0ee4713839534ca79e59956ca91d83b1)
+        ;
+
+        
+    
+    
+            circle_marker_251abf679b1c49299cc8f4e366843934.bindTooltip(
+                `<div>
+                     제주시농협 관덕로지점
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e92db258b14047cb97f08482781a68f5 = L.marker(
+                [33.5130786616948, 126.522388527373],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_047294041ea745a4aa94b60a97c16e33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e92db258b14047cb97f08482781a68f5.setIcon(icon_047294041ea745a4aa94b60a97c16e33);
+        
+    
+        var popup_a480faba30d04da29c58c9e72df8715d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c119f382d76248b5b21fc595d3c11e28 = $(`<div id="html_c119f382d76248b5b21fc595d3c11e28" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 관덕로 30 </pre></div>`)[0];
+            popup_a480faba30d04da29c58c9e72df8715d.setContent(html_c119f382d76248b5b21fc595d3c11e28);
+        
+
+        marker_e92db258b14047cb97f08482781a68f5.bindPopup(popup_a480faba30d04da29c58c9e72df8715d)
+        ;
+
+        
+    
+    
+            marker_e92db258b14047cb97f08482781a68f5.bindTooltip(
+                `<div>
+                     제주시농협 관덕로지점
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6eb4abcc132f4b528f1a68543b703efd = L.circleMarker(
+                [33.50520309443279, 126.53827798507896],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_cb8b50b6186044bfac907975e85fe172 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e8096434e1a487d9d32619f3719f567 = $(`<div id="html_7e8096434e1a487d9d32619f3719f567" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 동광로 96</pre></div>`)[0];
+            popup_cb8b50b6186044bfac907975e85fe172.setContent(html_7e8096434e1a487d9d32619f3719f567);
+        
+
+        circle_marker_6eb4abcc132f4b528f1a68543b703efd.bindPopup(popup_cb8b50b6186044bfac907975e85fe172)
+        ;
+
+        
+    
+    
+            circle_marker_6eb4abcc132f4b528f1a68543b703efd.bindTooltip(
+                `<div>
+                     사회복지법인인효원 제주복지요양병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6430034b41f94b2fb3ed8f72f23d565a = L.marker(
+                [33.50520309443279, 126.53827798507896],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_79eda43d6d0640439fc9a764d9fe35cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6430034b41f94b2fb3ed8f72f23d565a.setIcon(icon_79eda43d6d0640439fc9a764d9fe35cf);
+        
+    
+        var popup_f2cc4c7cc50146e7a4c3fcae98cdc3c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3491a03428d64677aa9902bfcae55823 = $(`<div id="html_3491a03428d64677aa9902bfcae55823" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 동광로 96</pre></div>`)[0];
+            popup_f2cc4c7cc50146e7a4c3fcae98cdc3c1.setContent(html_3491a03428d64677aa9902bfcae55823);
+        
+
+        marker_6430034b41f94b2fb3ed8f72f23d565a.bindPopup(popup_f2cc4c7cc50146e7a4c3fcae98cdc3c1)
+        ;
+
+        
+    
+    
+            marker_6430034b41f94b2fb3ed8f72f23d565a.bindTooltip(
+                `<div>
+                     사회복지법인인효원 제주복지요양병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f9fd0034e6b3444dbc75854df2541a2f = L.circleMarker(
+                [33.50023937357682, 126.51710841717627],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_678da67e4929455db141f9c46d9d41f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65607bb87a964690b334003154b9fe64 = $(`<div id="html_65607bb87a964690b334003154b9fe64" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 서광로 193 </pre></div>`)[0];
+            popup_678da67e4929455db141f9c46d9d41f3.setContent(html_65607bb87a964690b334003154b9fe64);
+        
+
+        circle_marker_f9fd0034e6b3444dbc75854df2541a2f.bindPopup(popup_678da67e4929455db141f9c46d9d41f3)
+        ;
+
+        
+    
+    
+            circle_marker_f9fd0034e6b3444dbc75854df2541a2f.bindTooltip(
+                `<div>
+                     한국병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7091210388974fb5b477490c23a5a918 = L.marker(
+                [33.50023937357682, 126.51710841717627],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_e330fd9ab0184f1ea7830efd0e4dde8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7091210388974fb5b477490c23a5a918.setIcon(icon_e330fd9ab0184f1ea7830efd0e4dde8c);
+        
+    
+        var popup_ed99d519b63f43219be7620a19ce2a0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e0356f7f28748be8f2ffb61e490d86e = $(`<div id="html_2e0356f7f28748be8f2ffb61e490d86e" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 서광로 193 </pre></div>`)[0];
+            popup_ed99d519b63f43219be7620a19ce2a0f.setContent(html_2e0356f7f28748be8f2ffb61e490d86e);
+        
+
+        marker_7091210388974fb5b477490c23a5a918.bindPopup(popup_ed99d519b63f43219be7620a19ce2a0f)
+        ;
+
+        
+    
+    
+            marker_7091210388974fb5b477490c23a5a918.bindTooltip(
+                `<div>
+                     한국병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2ba80753bfb84105b44c2780ba52e35d = L.circleMarker(
+                [33.48992869823614, 126.48506892036757],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_edcd5ef4e1334fffaa5361e9740decf4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a74d932f0bb4c29a748b146aff2a518 = $(`<div id="html_5a74d932f0bb4c29a748b146aff2a518" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 도령로 65 </pre></div>`)[0];
+            popup_edcd5ef4e1334fffaa5361e9740decf4.setContent(html_5a74d932f0bb4c29a748b146aff2a518);
+        
+
+        circle_marker_2ba80753bfb84105b44c2780ba52e35d.bindPopup(popup_edcd5ef4e1334fffaa5361e9740decf4)
+        ;
+
+        
+    
+    
+            circle_marker_2ba80753bfb84105b44c2780ba52e35d.bindTooltip(
+                `<div>
+                     제주한라병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ac3f96f4cef4a6f8f39220f1bd25604 = L.marker(
+                [33.48992869823614, 126.48506892036757],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_1e66364d9e0c40fdb04dd417b78aeecc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_1ac3f96f4cef4a6f8f39220f1bd25604.setIcon(icon_1e66364d9e0c40fdb04dd417b78aeecc);
+        
+    
+        var popup_690c7d75d6d948029f2e520c10e2ff09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad4274177db44638a058bd709f6089ec = $(`<div id="html_ad4274177db44638a058bd709f6089ec" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 도령로 65 </pre></div>`)[0];
+            popup_690c7d75d6d948029f2e520c10e2ff09.setContent(html_ad4274177db44638a058bd709f6089ec);
+        
+
+        marker_1ac3f96f4cef4a6f8f39220f1bd25604.bindPopup(popup_690c7d75d6d948029f2e520c10e2ff09)
+        ;
+
+        
+    
+    
+            marker_1ac3f96f4cef4a6f8f39220f1bd25604.bindTooltip(
+                `<div>
+                     제주한라병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1655358c94a44c5795c0ec567eaa89d8 = L.circleMarker(
+                [33.4672735491047, 126.545256412592],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_cc7567f6e5bd47d3a967ea7cc794c4ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2551e3aeaeb4b6c91d166875fe75c5a = $(`<div id="html_b2551e3aeaeb4b6c91d166875fe75c5a" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 아란13길 15 </pre></div>`)[0];
+            popup_cc7567f6e5bd47d3a967ea7cc794c4ea.setContent(html_b2551e3aeaeb4b6c91d166875fe75c5a);
+        
+
+        circle_marker_1655358c94a44c5795c0ec567eaa89d8.bindPopup(popup_cc7567f6e5bd47d3a967ea7cc794c4ea)
+        ;
+
+        
+    
+    
+            circle_marker_1655358c94a44c5795c0ec567eaa89d8.bindTooltip(
+                `<div>
+                     제주대학교병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb3308db73cb46a98d135a037b5565dd = L.marker(
+                [33.4672735491047, 126.545256412592],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_8ccc8e6ef94347e8acca42b7b70d6f21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_eb3308db73cb46a98d135a037b5565dd.setIcon(icon_8ccc8e6ef94347e8acca42b7b70d6f21);
+        
+    
+        var popup_09195bccdda14f2eba477e66058d1c06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbb065339ca1430391a018dcb1ee765a = $(`<div id="html_cbb065339ca1430391a018dcb1ee765a" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 아란13길 15 </pre></div>`)[0];
+            popup_09195bccdda14f2eba477e66058d1c06.setContent(html_cbb065339ca1430391a018dcb1ee765a);
+        
+
+        marker_eb3308db73cb46a98d135a037b5565dd.bindPopup(popup_09195bccdda14f2eba477e66058d1c06)
+        ;
+
+        
+    
+    
+            marker_eb3308db73cb46a98d135a037b5565dd.bindTooltip(
+                `<div>
+                     제주대학교병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e36a074a75d242e2971550af507ab661 = L.circleMarker(
+                [33.45904613115541, 126.48456853197396],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_1e85b9d06e2d48c5810c5041e6c2187b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4de5bb7c42ee454aa50534c26021e34d = $(`<div id="html_4de5bb7c42ee454aa50534c26021e34d" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 1100로 3055 </pre></div>`)[0];
+            popup_1e85b9d06e2d48c5810c5041e6c2187b.setContent(html_4de5bb7c42ee454aa50534c26021e34d);
+        
+
+        circle_marker_e36a074a75d242e2971550af507ab661.bindPopup(popup_1e85b9d06e2d48c5810c5041e6c2187b)
+        ;
+
+        
+    
+    
+            circle_marker_e36a074a75d242e2971550af507ab661.bindTooltip(
+                `<div>
+                     솔담한방병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccfd1e2218d647a59665f17f7d7d5e9f = L.marker(
+                [33.45904613115541, 126.48456853197396],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_5cf0e5dd6a544f5d9ae27cb5ff1cc4bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ccfd1e2218d647a59665f17f7d7d5e9f.setIcon(icon_5cf0e5dd6a544f5d9ae27cb5ff1cc4bc);
+        
+    
+        var popup_a1d30282671e4c18853fd5574d153936 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df6e861a555040b9a6a028448b62b9bc = $(`<div id="html_df6e861a555040b9a6a028448b62b9bc" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 제주시 1100로 3055 </pre></div>`)[0];
+            popup_a1d30282671e4c18853fd5574d153936.setContent(html_df6e861a555040b9a6a028448b62b9bc);
+        
+
+        marker_ccfd1e2218d647a59665f17f7d7d5e9f.bindPopup(popup_a1d30282671e4c18853fd5574d153936)
+        ;
+
+        
+    
+    
+            marker_ccfd1e2218d647a59665f17f7d7d5e9f.bindTooltip(
+                `<div>
+                     솔담한방병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_95b0797ef03e4283acaf88712eb9afb7 = L.circleMarker(
+                [33.2528665397338, 126.56242395843],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 1}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+        var popup_1a1fc194891c4765bf3686bf9002edae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d8ec0f11c0d4016810a184c93f7e872 = $(`<div id="html_8d8ec0f11c0d4016810a184c93f7e872" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 서귀포시 동문로 1 </pre></div>`)[0];
+            popup_1a1fc194891c4765bf3686bf9002edae.setContent(html_8d8ec0f11c0d4016810a184c93f7e872);
+        
+
+        circle_marker_95b0797ef03e4283acaf88712eb9afb7.bindPopup(popup_1a1fc194891c4765bf3686bf9002edae)
+        ;
+
+        
+    
+    
+            circle_marker_95b0797ef03e4283acaf88712eb9afb7.bindTooltip(
+                `<div>
+                     제주권역재활병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_375bdf158298412ba4269ed3af7016ae = L.marker(
+                [33.2528665397338, 126.56242395843],
+                {}
+            ).addTo(map_0f978eb4c1b84c82ae4efa0e1de91c7a);
+        
+    
+            var icon_ec340a49e02449fc8ba289199ee2d1f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_375bdf158298412ba4269ed3af7016ae.setIcon(icon_ec340a49e02449fc8ba289199ee2d1f0);
+        
+    
+        var popup_8b5cf74dc0034544bd381ead1fdc28fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41a7350e56f540b2a42f1d0cd4724306 = $(`<div id="html_41a7350e56f540b2a42f1d0cd4724306" style="width: 100.0%; height: 100.0%;"><pre>제주특별자치도 서귀포시 동문로 1 </pre></div>`)[0];
+            popup_8b5cf74dc0034544bd381ead1fdc28fc.setContent(html_41a7350e56f540b2a42f1d0cd4724306);
+        
+
+        marker_375bdf158298412ba4269ed3af7016ae.bindPopup(popup_8b5cf74dc0034544bd381ead1fdc28fc)
+        ;
+
+        
+    
+    
+            marker_375bdf158298412ba4269ed3af7016ae.bindTooltip(
+                `<div>
+                     제주권역재활병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
