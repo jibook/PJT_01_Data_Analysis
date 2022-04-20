@@ -10,7 +10,7 @@
 
 ## 프로젝트 포트폴리오
 
-- [멀티캠퍼스 세미프로젝트1차_ 포트폴리오](https://github.com/jibook/PJT_01_First_Data_Analysis/blob/master/PJT_01_PPT.md)
+- [멀티캠퍼스 세미프로젝트1차_ 포트폴리오](https://github.com/jibook/PJT_01_Data_Analysis/blob/master/%EB%A9%80%ED%8B%B0%EC%BA%A0%ED%8D%BC%EC%8A%A4_%EC%84%B8%EB%AF%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B81%EC%B0%A8_2%EC%A1%B0_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4(%EC%B5%9C%EC%A2%85).pdf)
 
 ## 데이터 수집
 
